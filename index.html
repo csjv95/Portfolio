@@ -12,7 +12,187 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
+
 <body>
+  <header>
+    <!-- Navbar -->
+    <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fab fa-diaspora"></i>
+      <a href="#">SJ</a>
+    </div>
+
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonials</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </div>
+    </nav>
+    </header>
+
+  <main>
+    <!--Home  -->
+    <section id="home">
+      <img src="imgs/home/me.jpg" alt="Me">
+      <h1 class="home__title">Hi~ <br/> I'm SJ</h1>
+      <h2 class="ally-hiden">Home</h2> <!--ally-hiden 숨길 태크-->
+      <h3 class="home__discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fuga,
+                                  repudiandae aliquid mollitia ex maiores sit voluptatum omnis repellendus 
+                                  voluptas eveniet in neque! Maiores natus expedita vitae enim quas incidunt.
+      </h3>
+      <button class="home__contact">CONTACT ME</button>
+    </section>
+
+    <!-- About -->
+    <section id="abuout">
+    <h2 class="about__title">About me</h2>
+
+    <p class="about__discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur delectus soluta cum eius,
+        est nisi dolorum possimus ullam rem culpa iste itaque, temporibus praesentium nobis assumenda repellendus cupiditate molestias?
+    </p>
+
+    <div class="about__majors">
+      <div class="major-html">
+        <i class="fab fa-html5 major__icon"></i>
+        <h3 class="major__title">HTML</h3>
+        <p class="major__discription">html</p>
+      </div>
+
+      <div class="major-css">
+        <i class="fab fa-css3-alt major__icon"></i>
+        <h3 class="major__title">CSS</h3>
+        <p class="major__discription">css</p>
+      </div>
+
+      <div class="major-css">
+        <i class="fab fa-js major__icon" ></i>
+        <h3 class="major__title>react">JavaScript</h3>
+        <p class="major__discription">javascript</p>
+      </div>
+    </div>
+
+    <h3 class="about__title">Careers</h3>
+    <div class="careers">
+      <div class="career">
+        <i class="fas fa-running career__icon"></i>
+        <p class="career__dicription">Lorem ipsum dolor1</p>
+      </div>
+
+      <div class="career">
+        <i class="fas fa-running career__icon"></i>
+        <p class="career__dicription">Lorem ipsum dolor</p>
+      </div>
+    </div>
+    </section>
   
+    <!-- Skills -->
+    <section id="skills">
+    <h2 class="skills__title">Skills</h2>
+    <h3>Skills & Attribute</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut harum accusamus veniam modi voluptatum tenetur cum fugit consectetur!
+       Ipsa magni nisi assumenda voluptates eveniet consequuntur libero numquam perspiciatis beatae dignissimos?
+    </p>
+
+    <div class="skillSet">
+      <div class="skillSet__left">
+        <h3 class="skillSet__title">Skills</h3>
+
+        <div class="skill__description">
+          <span>html,css</span>
+          <span>90%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+
+        <div class="skill__description">
+          <span>JavaScript</span>
+          <span>0%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+
+        <div class="skill__description">
+          <span>React</span>
+          <span>0%</span>
+        </div>
+        <div class="skill__bar">
+          <div class="skill__value"></div>
+        </div>
+
+      <div class="skillSet__right">
+        <div class="tools">
+          <h3 class="skillSet__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio</span></li>
+            <li><span>eclipse</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillSet__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>git</span></li>
+            <li><span>history</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- My Work -->
+    <section id="work">
+    <h2 class="work">My work</h2>
+    <h3>Projects</h3>
+    <nav class="projects__nav">
+      <button class="project__btn">All <span class="project__count"></span></button>
+      <button class="project__btn">Front-end <span class="project__count"></span></button>
+      <button class="project__btn">React <span class="project__count"></span></button>
+      <button class="project__btn">Algorithm <span class="project__count"></span></button>
+    </nav>
+    <article class="projects__container">
+      <a href="https://github.com/">
+        <figure class="project__item">
+          <img src="imgs/work/work.png" alt="front-end">
+          <figcaption>project description</figcaption>
+        </figure>
+      </a>
+    </article>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+    <h2>Testimonials</h2>
+    <h3>See what they say about me</h3>
+    <article class="testimonials">
+      <div class="testimonial">
+        <img src="imgs/testimonial/people1.jpg" alt="" class="testimonial__img">
+        <p class="testimonial__discription">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laborum ullam autem cupiditate eum sint aliquam nulla corrupti, perspiciatis voluptas possimus,
+          sit sequi, itaque et natus ipsam ad molestias quod inventore?
+        </p>
+      </div>
+    </article>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Contact -->
+    <section id="contact">
+    <h2 class="ally-hiden">Contact</h2>
+    <h3 class="contact__title">Let's talk</h3>
+    <a class="contact__mail" href="mailto:csjv95@gmail.com">csjv95@gmail.com</a>
+    <a href="https://github.com/csjv95">
+      <i class="fab fa-github"></i>
+    </a>
+    <p class="contact__rights">2020 SJ HOME - All rights reserved</p>
+    </section>
+  </footer>
 </body>
 </html>
