@@ -5,7 +5,7 @@
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color--light--purple);
+  background-color: var(--color--light-purple);
   align-items: center;
   color: var(--color-white);
 }
@@ -34,12 +34,15 @@
 }
 
 /* Main */
+section {
+  padding: 50px;
+  text-align: center;
+}
 
 /* Home */
 #home {
   background: url('imgs/home/bg4.png') center/cover no-repeat;
-  padding: 40px;
-  text-align: center;
+ 
 }
 
 .home__avatar {
@@ -62,3 +65,45 @@
   border-radius: var(--size-border-radius);
 } 
 
+/* About */
+
+.about__majors {
+  margin: 80px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <i> = inline element
+ .about__majors>i {
+  width: 180px; x
+  height: 180px; x
+  background-color: yellow;
+} */
+
+.major__icon {
+  margin-bottom: 16px;
+  width: 180px;
+  height: 180px;
+  font-size: 100px;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: 50%;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+/* hover 뒤에 i를 사용해서 icon 전체에 hover되도 i만 바뀌게 사용 / 앞에 i 를 사용하면 icon전체가 바뀐다 */
+.major__icon:hover i {
+  color: var(--color-orange);
+  transform: rotate(360deg) scale(1.4);
+}
+
+.major__title,
+.major__discription {
+ color: var(--color-dark-grey);
+}
+
+.major__discription {
+  font-size: var(--font-small);
+}
