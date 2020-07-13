@@ -121,9 +121,10 @@ section {
 }
 
 .skillSet__left {
-  flex-basis: 60%;
-  color:var(--color-dark-grey);
   padding: 20px 40px;
+  flex-basis: 60%;
+  background-color: var(--color-light-coral);
+  color:var(--color-dark-grey);
 }
 
 .skillSet__right {
@@ -159,10 +160,8 @@ section {
 .tools {
   background-color: var(--color-dark-pink);
 }
-.etc {
-  background-color: lightcoral;
-}
+
 .tools,
 .etc {
-  margin-bottom: 20px;
+  padding: 20px;
 }
