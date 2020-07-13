@@ -34,7 +34,11 @@
 
    --color--dark-violet: #9400D3;
   
-  --color--light--purple: #8977ad;
+   --color--light-purple: #8977ad;
+
+   --color-orange : #ffa500;
+   
+   --color-light-salmon: #ffa07a;
 
    /* Font size */
    --font-large: 48px;

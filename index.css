@@ -107,3 +107,62 @@ section {
 .major__discription {
   font-size: var(--font-small);
 }
+
+/* Skills */
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillSet {
+  margin: 20px 0;
+  display: flex;
+  background-color: var(--color-light-salmon);
+  color: var(--color-light-white);
+}
+
+.skillSet__left {
+  flex-basis: 60%;
+  color:var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skillSet__right {
+  flex-basis: 40%;
+  color:var(--color-dark-grey);
+}
+
+.skillSet__title {
+  color: var(--color-white);
+}
+
+.skill{
+  margin-bottom: 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-white);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-purple);
+}
+
+.tools {
+  background-color: var(--color-dark-pink);
+}
+.etc {
+  background-color: lightcoral;
+}
+.tools,
+.etc {
+  margin-bottom: 20px;
+}
