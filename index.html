@@ -19,12 +19,11 @@
   <header>
     <!-- Navbar -->
     <nav id="navbar">
-    <div class="navbar__logo">
-      <i class="fab fa-diaspora"></i>
-      <a href="#">SJ</a>
-    </div>
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">SJ</a>
+      </div>
 
-    <div class="navbar__menu">
       <ul class="navbar__menu">
         <li class="navbar__menu__item active">Home</li>
         <li class="navbar__menu__item">About</li>
@@ -33,8 +32,15 @@
         <li class="navbar__menu__item">Testimonials</li>
         <li class="navbar__menu__item">Contact</li>
       </ul>
-    </div>
+      
+
+      <!-- toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
+
+      
     </header>
 
   <main>
@@ -59,7 +65,7 @@
       </p>
 
       <div class="about__majors">
-        <div class="major-html">
+        <div class="major">
           <div class="major__icon">
             <i class="fab fa-html5"></i>
           </div>
@@ -67,7 +73,7 @@
           <p class="major__discription">html,css.js</p>
         </div>
 
-        <div class="major-react">
+        <div class="major">
           <div class="major__icon">
             <i class="fab fa-react"></i>
         </div>
@@ -75,7 +81,7 @@
           <p class="major__discription">react</p>
         </div>
 
-        <div class="major-algorithm">
+        <div class="major">
           <div class="major__icon">
             <i class="fas fa-brain"></i>
           </div>
@@ -169,8 +175,8 @@
     <!-- My Work -->
     <section id="work">
     <h2 class="work">My work</h2>
-    <h3>Projects</h3>
-    <nav class="projects__nav">
+      <h3>Projects</h3>
+      <nav class="projects__nav">
       <button class="project__btn active">All <span class="project__count">1</span></button>
       <button class="project__btn">Front-end <span class="project__count">1</span></button>
       <button class="project__btn">React <span class="project__count">0</span></button>
@@ -214,7 +220,6 @@
       <h2>Testimonials</h2>
       <h3>See what they say about me</h3>
       <article class="testimonials">
-
         <div class="testimonial">
           <img src="imgs/testimonial/people1.jpg" alt="Colleagues" class="testimonial__avatar">
           <div class="testimonial__speach-bubble">
