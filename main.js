@@ -3,7 +3,6 @@
 // Make navbar transparent when it is on the
 const navbar = document.getElementById('navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-
 document.addEventListener('scroll', () => {
   if (window,scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
@@ -29,6 +28,14 @@ home__contact__btn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
+// Make home slowly fade to  transparent as the window scrolls down
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - (window.scrollY / homeHeight);
+});
+
+//scrollIntoView function
 const scrollIntoView = (selector) => {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
