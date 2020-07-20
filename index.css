@@ -2,13 +2,22 @@
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color--light-purple);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
+  transition: all var(--animation-duration) ease-in-out;
 }
+
+#navbar.navbar--dark {
+  padding: 8px;
+  background-color: var(--color--light-purple);
+}
+
 .navbar__logo{
   font-size: var(--font-medium);
   font-weight: var(--weight--bold);
@@ -48,9 +57,15 @@ section {
   text-align: center;
 }
 
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Home */
 #home {
   background: url('imgs/home/bg4.png') center/cover no-repeat;
+  padding-top: 120px;
  
 }
 
@@ -101,6 +116,7 @@ section {
 .major__icon i {
   transition: all var(--animation-duration) ease;
 }
+
 /* hover 뒤에 i를 사용해서 icon 전체에 hover되도 i만 바뀌게 사용 / 앞에 i 를 사용하면 icon전체가 바뀐다 */
 .major__icon:hover i {
   color: var(--color-orange);
@@ -226,6 +242,8 @@ section {
 }
 
 .projects__container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
