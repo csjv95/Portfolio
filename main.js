@@ -13,11 +13,19 @@ document.addEventListener('scroll', () => {
 });
 
 // Handle scrolling when click on the navbar menu 
-
-const navbarMenu = document.getElementById('.navbar__menu');
+const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', () => {
-  console.log('clicked');
-})
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link === null) {
+    return;
+  }  
+   const scrollTo = document.querySelector(link);
+   scrollTo.scrollIntoView({behavior: 'smooth'});
+});
+
+
+
 
 
 
