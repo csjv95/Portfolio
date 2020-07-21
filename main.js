@@ -45,7 +45,11 @@ document.addEventListener('scroll', ()=> {
   }
 });
 
-
+// Handle click on the up-btn
+const upBtnClick = document.querySelector('.up-btn');
+document.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
 
 //scrollIntoView function
 const scrollIntoView = (selector) => {
