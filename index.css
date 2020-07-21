@@ -338,6 +338,25 @@ section {
   color: var(--color--light-purple);
 }
 
+.up-btn{
+  position: fixed;
+  bottom: 18px;
+  right: 10px;
+  font-size: 24px;
+  color: var(--color-purple);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3 ease-in;
+}
+.up-btn.visible{
+  opacity: .2;
+  pointer-events: auto;
+}
+
+.up-btn:hover {
+  opacity: 1;
+}
+
 /* Footer */
 
 /* Contect */
