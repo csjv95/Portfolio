@@ -47,8 +47,15 @@ document.addEventListener('scroll', ()=> {
 
 // Handle click on the up-btn
 const upBtnClick = document.querySelector('.up-btn');
-document.addEventListener('click', () => {
+upBtnClick.addEventListener('click', () => {
   scrollIntoView('#home');
+});
+
+//Projects
+const projectsNav = document.querySelector('.projects__nav');
+projectsNav.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter
+    console.log(filter);
 });
 
 //scrollIntoView function
