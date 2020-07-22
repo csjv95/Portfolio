@@ -54,7 +54,7 @@ upBtnClick.addEventListener('click', () => {
 //Projects
 const projectsNav = document.querySelector('.projects__nav');
 projectsNav.addEventListener('click', (e) => {
-  const filter = e.target.dataset.filter
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
     console.log(filter);
 });
 
