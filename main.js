@@ -16,7 +16,7 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', () => {
   const target = event.target;
   const link = target.dataset.link;
-  if (link === null) {
+  if (link == null) {
     return;
   }  
   scrollIntoView(link);
@@ -53,9 +53,20 @@ upBtnClick.addEventListener('click', () => {
 
 //Projects
 const projectsNav = document.querySelector('.projects__nav');
+const projects = document.querySelectorAll('.project');
 projectsNav.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    console.log(filter);
+  if(filter == null){
+    return;
+  } 
+  projects.forEach((project) => {
+    const type = project.dataset.type;
+    if(filter === 'all' || filter === type){
+      project.classList.remove('invisible');
+    }else {
+      project.classList.add('invisible');
+    }
+    });   
 });
 
 //scrollIntoView function
@@ -63,5 +74,3 @@ const scrollIntoView = (selector) => {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
 };
-
-
