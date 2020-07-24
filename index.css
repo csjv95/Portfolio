@@ -217,7 +217,7 @@ section {
 
 .project__btn.active,
 .project__btn:hover {
-  background-color: var(--color--pink);
+  background-color: var(--color--light-purple);
   color: var(--color-dark-white);
 }
 

@@ -60,6 +60,12 @@ projectsNav.addEventListener('click', (e) => {
   if(filter == null){
     return;
   }
+  // Remove selection from the previous item select the new one
+  const active = document.querySelector('.project__btn.active');
+  active.classList.remove('active');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
   animationAdd();
   setTimeout(() => {
     projects.forEach((project) => {
@@ -77,13 +83,11 @@ projectsNav.addEventListener('click', (e) => {
 // projects__container__click__event funtion add
 const animationAdd = () => {
   projectContainer.classList.add('projects__container__animation');
-  console.log('hi');
 }
 
 // projects__container__click__event funtion remove
 const animationRemove = () => {
   projectContainer.classList.remove('projects__container__animation');
-  console.log('bye');
 }
 
 //scrollIntoView function
