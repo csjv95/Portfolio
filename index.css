@@ -285,6 +285,7 @@ section {
   top:0;
   left:0;
   background-color: var(--color-black);
+  color:var(--color--light-purple);
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -405,14 +406,27 @@ section {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color--light-purple);
   }
 
+  #navbar.open {
+    opacity: .8;
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
+  }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+    
   }
+  .navbar__menu.open {
+    display: block;
+  }
+
 
   .about__majors {
     flex-direction: column;

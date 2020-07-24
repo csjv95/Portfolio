@@ -1,6 +1,6 @@
 'use strict';
 
-// Make navbar transparent when it is on the
+// Make navbar transparent when it is on the menu
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -20,7 +20,16 @@ navbarMenu.addEventListener('click', () => {
     return;
   }
   scrollIntoView(link);
+  navbarMenu.classList.remove('open');
 });
+
+// Navbar toggle button for samll screen 
+const toggleBtn = document.querySelector('.navbar__toggle-btn');
+ toggleBtn.addEventListener('click' , () => {
+  navbarMenu.classList.toggle('open');
+  navbar.classList.toggle('open');
+ })
+
 
 // Handle click on 'contact me'  button on home
 const home__contact__btn = document.querySelector('.home__contact');
