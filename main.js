@@ -54,20 +54,37 @@ upBtnClick.addEventListener('click', () => {
 //Projects
 const projectsNav = document.querySelector('.projects__nav');
 const projects = document.querySelectorAll('.project');
+const projectContainer = document.querySelector('.projects__container');
 projectsNav.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if(filter == null){
     return;
-  } 
-  projects.forEach((project) => {
-    const type = project.dataset.type;
-    if(filter === 'all' || filter === type){
-      project.classList.remove('invisible');
-    }else {
-      project.classList.add('invisible');
-    }
-    });   
+  }
+  animationAdd();
+  setTimeout(() => {
+    projects.forEach((project) => {
+        const type = project.dataset.type;
+        if(filter === 'all' || filter === type){
+          project.classList.remove('invisible');
+        }else {
+          project.classList.add('invisible');
+        }
+    });
+    animationRemove();
+  }, 300);
 });
+
+// projects__container__click__event funtion add
+const animationAdd = () => {
+  projectContainer.classList.add('projects__container__animation');
+  console.log('hi');
+}
+
+// projects__container__click__event funtion remove
+const animationRemove = () => {
+  projectContainer.classList.remove('projects__container__animation');
+  console.log('bye');
+}
 
 //scrollIntoView function
 const scrollIntoView = (selector) => {
