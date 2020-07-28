@@ -38,9 +38,11 @@
 
    --color-orange : #ffa500;
 
-   --color-light-salmon: #ffa07a;
+   --color--light-salmon: #ffa07a;
 
-   --color-light-coral: #f08080;
+   --color--light-coral: #f08080;
+
+   --color-blueviolet : #8A2BE2;
 
    /* Font size */
    --font-large: 48px;
