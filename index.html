@@ -1,257 +1,291 @@
 <!DOCTYPE html>
 <html lang="ko-kr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seokjin's Portfolio</title>
-  <meta name ="description" content="Portfolio for world-renowned software engineer Seokjin">
-  <meta name="author" content="Seokjin">
-  <script src="https://kit.fontawesome.com/439c4a0fb6.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="imgs/favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css">
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">SJ</a>
-      </div>
-
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item " data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
-      
-      <!-- toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <!--Home  -->
-    <section id="home">
-      <img src="imgs/home/me.jpg" alt="Me" class="home__avatar">
-      <h1 class="home__title">Hi~ <br/> I'm SJ</h1>
-      <h2 class="a11y-hidden">Home</h2> <!--a11y-hiden 숨길 태크-->
-      <h3 class="home__discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fuga,
-                                  repudiandae aliquid mollitia ex maiores sit voluptatum omnis repellendus 
-                                  voluptas eveniet in neque! Maiores natus expedita vitae enim quas incidunt.
-      </h3>
-      <button class="home__contact">CONTACT ME</button>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="section__container">
-        <h2 class="about__title">About me</h2>
-
-        <p class="about__discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta pariatur delectus soluta cum eius,
-          est nisi dolorum possimus ullam rem culpa iste itaque, temporibus praesentium nobis assumenda repellendus cupiditate molestias?
-        </p>
-
-        <div class="about__majors">
-          <div class="major">
-            <div class="major__icon">
-              <i class="fab fa-html5"></i>
-            </div>
-          <h3 class="major__title">HTML,CSS,JS</h3>
-          <p class="major__discription">html,css.js</p>
-          </div>
-
-          <div class="major">
-            <div class="major__icon">
-              <i class="fab fa-react"></i>
-            </div>
-          <h3 class="major__title">React</h3>
-          <p class="major__discription">react</p>
-          </div>
-
-          <div class="major">
-            <div class="major__icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3 class="major__title">Algorithm</h3>
-            <p class="major__discription">algorithm</p>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seokjin's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned software engineer Seokjin"
+    />
+    <meta name="author" content="Seokjin" />
+    <script
+      src="https://kit.fontawesome.com/439c4a0fb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <!-- git version 1.0.1 -->
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div class="navbar__logo">
+          <i class="fab fa-diaspora"></i>
+          <a href="#">SJ</a>
         </div>
 
-        <div class="about__careers">
-          <h3 class="about__title">Careers</h3>
-          <div class="careers">
-            <div class="career">
-              <i class="fas fa-running career__icon"></i>
-              <p class="career__dicription">Lorem ipsum dolor1</p>
-            </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
 
-            <div class="career">
-              <i class="fas fa-running career__icon"></i>
-              <p class="career__dicription">Lorem ipsum dolor</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Skills -->
-    <section id="skills">
-      <div class="section__container">
-        <h2 class="skills__title">Skills</h2>
-        <h3>Skills & Attribute</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut harum accusamus veniam modi voluptatum tenetur cum fugit consectetur!
-       Ipsa magni nisi assumenda voluptates eveniet consequuntur libero numquam perspiciatis beatae dignissimos?
-        </p>
-
-        <div class="skillSet">
-          <div class="skillSet__left">
-            <h3 class="skillSet__title">Skills</h3>
-
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML,CSS</span>
-                <span>90%</span>
-              </div>
-            </div>
-
-            <div class="skill">
-            <div class="skill__bar">
-            <div class="skill__value" style="width: 90%;"></div>
-            </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>80%</span>
-              </div>
-            </div>
-          
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 80%;"></div>
-            </div>
-
-            <div class="skill__description">
-              <span>React</span>
-              <span>1%</span>
-            </div>
-
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 1%;"></div>
-            </div>
-          </div>
-
-          <div class="skillSet__right">
-            <div class="tools">
-              <h3 class="skillSet__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio</span></li>
-                <li><span>Eclipse</span></li>
-              </ul>
-            </div>
-
-            <div class="etc">
-              <h3 class="skillSet__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>History</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- My Work -->
-    <section id="work">
-      <h2 class="work">My work</h2>
-      <h3>Projects</h3>
-      <nav class="projects__nav">
-        <button class="project__btn active" data-filter="all">All 
-          <span class="project__count">8</span>
-        </button>
-        <button class="project__btn" data-filter="front-end">Front-end 
-          <span class="project__count">4</span>
-        </button>
-        <button class="project__btn" data-filter="back-end">Back-end 
-          <span class="project__count">2</span>
-        </button>
-        <button class="project__btn" data-filter="algorithm">Algorithm 
-          <span class="project__count">2</span>
+        <!-- toggle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
         </button>
       </nav>
+    </header>
 
-      <article class="projects__container">
-        <a href="https://github.com/" class="project" data-type="front-end"> 
+    <main>
+      <!--Home  -->
+      <section id="home">
+        <img src="imgs/home/me.jpg" alt="Me" class="home__avatar" />
+        <h1 class="home__title">
+          Hi~ <br />
+          I'm SJ
+        </h1>
+        <h2 class="a11y-hidden">Home</h2>
+        <!--a11y-hiden 숨길 태크-->
+        <h3 class="home__discription">Front-end deveoper</h3>
+        <button class="home__contact">CONTACT ME</button>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="section__container">
+          <h2 class="about__title">About me</h2>
+
+          <p class="about__discription">
+            안녕하세요 Front-end 개발자 최석진 입니다 <br />
+            즐겁게 주어진 문제를 해결하며 하루하루 새로운 것을 배우며 성장하고
+            있는것에 보람을 느낍니다
+          </p>
+
+          <div class="about__majors">
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3 class="major__title">HTML,CSS,JS</h3>
+              <p class="major__discription">html,css.js</p>
+            </div>
+
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3 class="major__title">React</h3>
+              <p class="major__discription">react</p>
+            </div>
+
+            <div class="major">
+              <div class="major__icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 class="major__title">Algorithm</h3>
+              <p class="major__discription">algorithm</p>
+            </div>
+          </div>
+
+          <div class="about__careers">
+            <h3 class="about__title">Careers</h3>
+            <div class="careers">
+              <div class="career">
+                <i class="fas fa-running career__icon"></i>
+                <p class="career__dicription">경력을 쌓고 있습니다</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="section__container">
+          <h2 class="skills__title">Skills</h2>
+          <h3>Skills & Attribute</h3>
+          <p>
+            Front-end의 기본인 HTML,CSS,JavaScript를 사용할줄 알며 React를
+            사용하여 개발하고 git으로 관리를 합니다
+          </p>
+
+          <div class="skillSet">
+            <div class="skillSet__left">
+              <h3 class="skillSet__title">Skills</h3>
+
+              <div class="skill">
+                <div class="skill__description">
+                  <span>HTML,CSS,JavaScript</span>
+                  <!-- <span>90%</span> -->
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill__description">
+                  <span>JavaScript</span>
+                  <!-- <span>80%</span> -->
+                </div>
+              </div>
+
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 100%"></div>
+              </div>
+
+              <div class="skill__description">
+                <span>React</span>
+                <!-- <span>100%</span> -->
+              </div>
+
+              <!-- <div class="skill__bar">
+              <div class="skill__value" style="width: 1%;"></div>
+            </div> -->
+            </div>
+
+            <div class="skillSet__right">
+              <div class="tools">
+                <h3 class="skillSet__title">Tools</h3>
+                <ul class="tools__list">
+                  <li><span>Visual Studio</span></li>
+                  <!-- <li><span>Eclipse</span></li> -->
+                </ul>
+              </div>
+
+              <div class="etc">
+                <h3 class="skillSet__title">Etc</h3>
+                <ul class="etc__list">
+                  <li><span>Git</span></li>
+                  <li><span>Redux</span></li>
+                  <li><span>Firebase</span></li>
+                  <!-- <li><span>History</span></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Work -->
+      <section id="work">
+        <h2 class="work">My work</h2>
+        <h3>Projects</h3>
+        <nav class="projects__nav">
+          <button class="project__btn active" data-filter="all">
+            All
+            <span class="project__count">5</span>
+          </button>
+          <button class="project__btn" data-filter="front-end">
+            Front-end
+            <span class="project__count">4</span>
+          </button>
+          <button class="project__btn" data-filter="back-end">
+            Back-end
+            <span class="project__count">0</span>
+          </button>
+          <button class="project__btn" data-filter="algorithm">
+            Algorithm
+            <span class="project__count">1</span>
+          </button>
+        </nav>
+
+        <article class="projects__container">
+          <a
+            href="https://instargram-graph.web.app/"
+            class="project"
+            data-type="front-end"
+          >
+            <figure class="project__item">
+              <img src="imgs/work/friendsGram.PNG" alt="front-end" />
+              <figcaption class="project__discription">Friendsgram</figcaption>
+            </figure>
+          </a>
+
+          <!-- <a href="https://github.com/" class="project" data-type="back-end">
         <figure class="project__item">
           <img src="imgs/work/work.png" alt="front-end">
           <figcaption class="project__discription">project description</figcaption>
         </figure>
-        </a>
+        </a> -->
 
-        <a href="https://github.com/" class="project" data-type="back-end">
-        <figure class="project__item">
-          <img src="imgs/work/work.png" alt="front-end">
-          <figcaption class="project__discription">project description</figcaption>
-        </figure>
-        </a>
+          <a
+            href="https://csjv95.github.io/react_basic_youtube2/"
+            class="project"
+            data-type="front-end"
+          >
+            <figure class="project__item">
+              <img src="imgs/work/youTube.PNG" alt="front-end" />
+              <figcaption class="project__discription">Youtube</figcaption>
+            </figure>
+          </a>
 
-        <a href="https://github.com/" class="project" data-type="algorithm">
-        <figure class="project__item">
-          <img src="imgs/work/work.png" alt="front-end">
-          <figcaption class="project__discription">project description</figcaption>
-        </figure>
-        </a>
-
-        <a href="https://github.com/" class="project" data-type="front-end">
-        <figure class="project__item">
-          <img src="imgs/work/work.png" alt="front-end">
-          <figcaption class="project__discription">project description</figcaption>
-        </figure>
-        </a>
-
-        <a href="https://github.com/" class="project" data-type="back-end"> 
+          <!-- <a href="https://github.com/" class="project" data-type="back-end"> 
           <figure class="project__item">
             <img src="imgs/work/work.png" alt="front-end">
             <figcaption class="project__discription">project description</figcaption>
           </figure>
-        </a>
+        </a> -->
 
-        <a href="https://github.com/" class="project" data-type="algorithm"> 
+          <!-- <a href="https://github.com/" class="project" data-type="algorithm"> 
           <figure class="project__item">
             <img src="imgs/work/work.png" alt="front-end">
             <figcaption class="project__discription">project description</figcaption>
           </figure>
-        </a>
+        </a> -->
 
-        <a href="https://github.com/" class="project" data-type="front-end"> 
-          <figure class="project__item">
-            <img src="imgs/work/work.png" alt="front-end">
-            <figcaption class="project__discription">project description</figcaption>
-          </figure>
-        </a>
+          <a
+            href="https://csjv95.github.io/react_basic_card-maker/"
+            class="project"
+            data-type="front-end"
+          >
+            <figure class="project__item">
+              <img src="imgs/work/cardMarker.PNG" alt="front-end" />
+              <figcaption class="project__discription">CardMaker</figcaption>
+            </figure>
+          </a>
 
-        <a href="https://github.com/" class="project" data-type="front-end"> 
-          <figure class="project__item">
-            <img src="imgs/work/work.png" alt="front-end">
-            <figcaption class="project__discription">project description</figcaption>
-          </figure>
-        </a>
-      </article>
-    </section>
+          <a
+            href="https://csjv95.github.io/react_project_movie/"
+            class="project"
+            data-type="front-end"
+          >
+            <figure class="project__item">
+              <img src="imgs/work/movie.PNG" alt="front-end" />
+              <figcaption class="project__discription">
+                Bset Movie app
+              </figcaption>
+            </figure>
+          </a>
 
-    <!-- Testimonials -->
-    <section id="testimonials">
+          <a href="https://github.com/" class="project" data-type="algorithm">
+            <figure class="project__item">
+              <img src="imgs/work/work.png" alt="front-end" />
+              <figcaption class="project__discription">
+                Algorithm git
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+      </section>
+
+      <!-- Testimonials -->
+      <!-- <section id="testimonials">
       <div class="section__container testimonial__container">
         <h2>Testimonials</h2>
         <h3>See what they say about me</h3>
@@ -281,32 +315,35 @@
         </div>
         </article>
       </div>
-    </section>
+    </section> -->
 
-    <!--up-btn -->
-    <button class="up-btn">
+      <!--up-btn -->
+      <button class="up-btn">
         <i class="fas fa-chevron-circle-up"></i>
-    </button>
+      </button>
+    </main>
 
-  </main>
-
-  <footer>
-    <!-- Contact -->
-    <section id="contact">
-    <h2 class="a11y-hidden">Contact</h2>
-    <h3 class="contact__title">Let's talk</h3>
-    <a class="contact__mail" href="mailto:csjv95@gmail.com">Email: csjv95@gmail.com</a>
-    <div class="contect__links">
-      <a href="https://github.com/csjv95">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/feed/?trk=nav_logo">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-  </div>
-    <p class="contact__rights">2020 SJ HOME - All rights reserved</p>
-    </section>
-  </footer>
-</body>
-
+    <footer>
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="a11y-hidden">Contact</h2>
+        <h3 class="contact__title">Let's talk , click the icon</h3>
+        <a class="contact__mail" href="mailto:csjv95@gmail.com"
+          >Email: csjv95@gmail.com</a
+        >
+        <div class="contect__links">
+          <a href="https://github.com/csjv95">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/feed/?trk=nav_logo">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="tel:010-2684-2194">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+        <p class="contact__rights">2020 SJ HOME - All rights reserved</p>
+      </section>
+    </footer>
+  </body>
 </html>
